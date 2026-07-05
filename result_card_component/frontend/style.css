@@ -1,0 +1,429 @@
+/* =========================================================
+   CARD GERAL
+========================================================= */
+.section-box {
+    background: #F8FAFC;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 12px 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* =========================================================
+   CARD DE SELECIONADOS
+========================================================= */
+.selected-header {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.selected-asset-wrap {
+    margin-bottom: 10px;
+}
+
+.selected-card {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%) !important;
+    border: 1px solid #D9E2FF !important;
+    border-radius: 18px 18px 0 0;
+    padding: 16px 12px;
+    min-height: 132px;
+    box-shadow: 0 3px 8px rgba(16, 24, 40, 0.06), 0 10px 22px rgba(37, 99, 235, 0.08);
+    transition: transform 0.20s ease, box-shadow 0.20s ease, border-color 0.20s ease, background 0.20s ease;
+    backdrop-filter: blur(2px);
+}
+
+.selected-card:hover {
+    transform: translateY(-4px) scale(1.01);
+    border-color: #2563EB !important;
+    background: linear-gradient(180deg, rgba(255,255,255,0.20) 0%, rgba(255,255,255,0.10) 100%) !important;
+    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.18);
+}
+
+.selected-symbol {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.selected-label {
+    font-size: 0.84rem;
+    color: #6B7280;
+    margin-top: 4px;
+    line-height: 1.3;
+}
+
+/* =========================================================
+   ESPAÇO ENTRE CARD E BOTÃO
+========================================================= */
+div[data-testid="stButton"] {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+div[data-testid="stButton"] > button:hover {
+    background: linear-gradient(135deg, #FF3B3D, #FF6B6B) !important;
+    border-color: #FF3B3D !important;
+    color: #FFFFFF !important;
+    box-shadow:
+        0 0 0 1px #FF3B3D,
+        0 12px 24px rgba(255, 77, 79, 0.24);
+    transform: translateY(-2px) scale(1.02);
+    opacity: 1 !important;
+}
+
+div[data-testid="stButton"] > button:active {
+    transform: translateY(0px) scale(0.99);
+    box-shadow: 0 2px 8px rgba(16, 24, 40, 0.08);
+}
+
+/* =========================================================
+   sidebar
+========================================================= */
+.sidebar-selected-card {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%) !important;
+    border: 1px solid #D9E2FF !important;
+    border-radius: 18px !important;
+    padding: 12px 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 8px rgba(16, 24, 40, 0.06), 0 10px 22px rgba(37, 99, 235, 0.08);
+    backdrop-filter: blur(2px);
+    transition: transform 0.20s ease, box-shadow 0.20s ease, border-color 0.20s ease, background 0.20s ease;
+}
+
+.sidebar-selected-card:hover {
+    transform: translateY(-2px);
+    border-color: #2563EB !important;
+    background: linear-gradient(180deg, rgba(255,255,255,0.20) 0%, rgba(255,255,255,0.10) 100%) !important;
+    box-shadow: 0 12px 24px rgba(37, 99, 235, 0.14);
+}
+
+/* =========================================================
+   PESOS DA CARTEIRA – UM ÚNICO CARD
+========================================================= */
+.weights-section-title {
+    margin-top: 4px;
+    margin-bottom: 2px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #111827;
+}
+
+.weight-item {
+    margin-bottom: 2px;
+}
+
+.weight-name {
+    font-size: 0.90rem;
+    font-weight: 600;
+    color: #374151;
+    line-height: 1.25;
+    margin-top: 4px;
+    min-height: 34px;
+}
+
+.weight-meta {
+    font-size: 0.78rem;
+    color: #6B7280;
+    line-height: 1.35;
+    margin-top: 4px;
+}
+
+.sum-badge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 -20px 0;
+    padding: 12px 14px 6px 14px;
+    border-radius: 16px 16px 0 0;
+    border: 1px solid #C7D2FE;
+    color: #1F2937;
+    background: #eeeeee;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+div.confirmar-pesos-btn {
+    margin-top: -10px !important;
+    padding-top: 0 !important;
+}
+
+.sum-badge-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+.sum-badge-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    background: #FFFFFF;
+    border: 1px solid #C7D2FE;
+    color: #4338CA;
+    font-size: 0.9rem;
+    font-weight: 800;
+    flex: 0 0 auto;
+    transform: translateY(-2px);
+}
+
+.sum-badge-text {
+    color: #1F2937;
+    font-weight: 700;
+    white-space: nowrap;
+    transform: translateY(-2px);
+}
+
+.sum-badge-value {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 84px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #FFFFFF;
+    border: 1px solid #C7D2FE;
+    color: #4338CA;
+    font-size: 0.92rem;
+    font-weight: 800;
+    white-space: nowrap;
+        transform: translateY(-2px);
+}
+
+/* Number input mais compacto dentro do card único */
+div[data-testid="stNumberInput"] {
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+div[data-testid="stNumberInput"] input {
+    border-radius: 16px;
+}
+
+/* Number input com visual mais próximo do card */
+div[data-testid="stNumberInput"] {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+div[data-testid="stNumberInput"] button {
+    border: none !important;
+    background: #EEF2FF !important;
+    color: #4338CA !important;
+}
+
+/* =========================================================
+   APENAS O BOTÃO "CONFIRMAR PESOS" – BORDAS ARREDONDADAS
+========================================================= */
+div.confirmar-pesos-btn div[data-testid="stButton"] {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+div.confirmar-pesos-btn div[data-testid="stButton"] > button {
+    width: 100%;
+    min-height: 44px !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    border: 1px solid #D1D5DB !important;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%) !important;
+    background-color: #FFFFFF !important;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%) !important;
+    color: #1F2937 !important;
+    box-shadow: 0 2px 6px rgba(16, 24, 40, 0.05) !important;
+    transition: all 0.18s ease;
+}
+
+div.confirmar-pesos-btn div[data-testid="stButton"] > button:hover:not(:disabled) {
+    border-color: #9CA3AF !important;
+    background: linear-gradient(135deg, #F3F4F6, #E5E7EB) !important;
+    background-image: linear-gradient(135deg, #F3F4F6, #E5E7EB) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10) !important;
+}
+
+div.confirmar-pesos-btn div[data-testid="stButton"] > button:disabled {
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+div.confirmar-pesos-btn div[data-testid="stButton"] > button:focus-visible {
+    border-radius: 20px !important;
+    outline: 2px solid #2563EB;
+    outline-offset: 2px;
+}
+
+/* =========================================================
+   WRAPPER DO CARD QUE ENGLOBA CARD + BOTÃO
+========================================================= */
+div[data-testid="stVerticalBlockBorderWrapper"],
+div[data-testid="stVerticalBlockBorderWrapper"] > div,
+div[data-testid="stVerticalBlockBorderWrapper"] > div > div {
+    background: linear-gradient(180deg, #FEF2F2 0%, #FECACA 100%) !important;
+    background-color: #FECACA !important;
+    border: 1px solid #EF4444 !important;
+    border-radius: 18px !important;
+    box-shadow: 0 3px 8px rgba(239, 68, 68, 0.12), 0 10px 24px rgba(239, 68, 68, 0.18) !important;
+    overflow: hidden !important;
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"]:hover,
+div[data-testid="stVerticalBlockBorderWrapper"] > div:hover,
+div[data-testid="stVerticalBlockBorderWrapper"] > div > div:hover {
+    border-color: #DC2626 !important;
+    transform: translateY(-3px);
+    background: linear-gradient(180deg, #FECACA 0%, #FCA5A5 100%) !important;
+    background-color: #FCA5A5 !important;
+    box-shadow: 0 14px 30px rgba(239, 68, 68, 0.22) !important;
+}
+
+/* =========================================================
+   CARD DO ATIVO QUE APARECE DENTRO DO CARD PAI
+========================================================= */
+.asset-card {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+    border: 1px solid #D9E2FF;
+    border-radius: 18px 18px 0 0;
+    padding: 16px 12px 16px 12px;
+    min-height: 165px;
+    margin-bottom: 0 !important;
+    box-shadow: 0 3px 8px rgba(16, 24, 40, 0.06), 0 10px 22px rgba(37, 99, 235, 0.08);
+    transition: transform 0.20s ease, box-shadow 0.20s ease, border-color 0.20s ease, background 0.20s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    backdrop-filter: blur(2px);
+}
+
+.asset-card:hover {
+    transform: translateY(-4px) scale(1.01);
+    border-color: #2563EB;
+    background: linear-gradient(180deg, rgba(255,255,255,0.20) 0%, rgba(255,255,255,0.10) 100%) !important;
+    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.18);
+}
+
+.asset-topline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.asset-symbol {
+    font-size: 1.0rem;
+    font-weight: 800;
+    color: #111827;
+    line-height: 1.15;
+}
+
+.asset-name {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #374151;
+    line-height: 1.25;
+    margin-top: 4px;
+    min-height: 34px;
+}
+
+.asset-meta {
+    font-size: 0.78rem;
+    color: #6B7280;
+    line-height: 1.35;
+    margin-top: 2px;
+}
+
+/* =========================================================
+   NOME QUE APARECE NO BOTAO DA EMPRESA DO LADO DIREITO
+========================================================= */
+.pill {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: #EEF2FF;
+    color: #4338CA;
+    font-size: 0.72rem;
+    font-weight: 700;
+    white-space: nowrap;
+    border: 1px solid #D6DBFF;
+}
+
+/* =========================================================
+   BOTÃO EM SI
+========================================================= */
+div[data-testid="stButton"] > button {
+    width: 100%;
+    min-height: 38px;
+    border-radius: 0 0 18px 18px;
+    border: 1px solid #D9E2FF !important;
+    border-top: none !important;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.80rem;
+    font-weight: 800;
+    margin-top: 0 !important;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%) !important;
+    background-color: #FFFFFF !important;
+    color: #1F2937 !important;
+    box-shadow: 0 2px 6px rgba(16, 24, 40, 0.05);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+    background-image: none !important;
+}
+
+div[data-testid="stButton"] > button:hover:not([kind="primary"]),
+div[data-testid="stButton"] > button:focus:not([kind="primary"]),
+div[data-testid="stButton"] > button:active:not([kind="primary"]) {
+    background: linear-gradient(135deg, #E5E7EB, #F3F4F6) !important;
+    background-color: #E5E7EB !important;
+    border: 1px solid #9CA3AF !important;
+    color: #111827 !important;
+    box-shadow:
+        0 0 0 1px rgba(156, 163, 175, 0.35),
+        0 10px 20px rgba(0, 0, 0, 0.10);
+    transform: translateY(-2px) scale(1.01);
+    opacity: 1 !important;
+}
+
+div[data-testid="stButton"] > button[kind="primary"] {
+    background: linear-gradient(180deg, #FF4D4F, #E93B3D) !important;
+    background-color: #FF4D4F !important;
+    border: 1px solid #E11D48 !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 10px rgba(255, 77, 79, 0.18);
+}
+
+div[data-testid="stButton"] > button[kind="primary"]:hover {
+    background: linear-gradient(135deg, #FF3B3D, #FF6B6B) !important;
+    border-color: #FF3B3D !important;
+    color: #FFFFFF !important;
+    box-shadow:
+        0 0 0 1px #FF3B3D,
+        0 12px 24px rgba(255, 77, 79, 0.24);
+    transform: translateY(-2px) scale(1.02);
+    opacity: 1 !important;
+}
+
+div[data-testid="stButton"] > button:active {
+    transform: translateY(0px) scale(0.99);
+    box-shadow: 0 2px 8px rgba(16, 24, 40, 0.08);
+}
