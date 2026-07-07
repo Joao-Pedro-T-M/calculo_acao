@@ -427,3 +427,103 @@ div[data-testid="stButton"] > button:active {
     transform: translateY(0px) scale(0.99);
     box-shadow: 0 2px 8px rgba(16, 24, 40, 0.08);
 }
+
+
+    .portfolio-summary-bar {
+        background: linear-gradient(135deg, #F8FAFC 0%, #EEF2FF 100%);
+        border: 1px solid #E5E7EB;
+        border-radius: 16px;
+        padding: 12px 14px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .portfolio-summary-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+    }
+
+    .portfolio-summary-icon {
+        width: 34px;
+        height: 34px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: #111827;
+        color: white;
+        font-size: 16px;
+        flex: 0 0 auto;
+    }
+
+    .portfolio-summary-text {
+        font-size: 0.98rem;
+        font-weight: 700;
+        color: #111827;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .portfolio-summary-sub {
+        font-size: 0.82rem;
+        color: #6B7280;
+        margin-top: 2px;
+    }
+
+    .portfolio-summary-value {
+        font-size: 1.15rem;
+        font-weight: 800;
+        color: #0F172A;
+        flex: 0 0 auto;
+    }
+
+    .extra-list-box {
+        max-height: 320px;
+        overflow-y: auto;
+        padding-right: 4px;
+    }
+
+    .extra-card {
+        background: #F8FAFC;
+        border: 1px solid #E5E7EB;
+        border-radius: 14px;
+        padding: 10px 12px;
+        margin-bottom: 10px;
+    }
+
+    .extra-card-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .extra-card-title {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #111827;
+    }
+
+    .extra-card-meta {
+        font-size: 0.82rem;
+        color: #6B7280;
+        margin-top: 2px;
+    }
+
+    /* só estes dois botões */
+    div.st-key-add_extra_portfolio_btn button,
+    div.st-key-confirmar_pesos button {
+        border-radius: 999px !important;
+    }
+    div[class*="st-key-remover_carteira_extra_"] button {
+        border-radius: 999px !important;
+        padding-top: 0.10rem !important;
+        padding-bottom: 0.35rem !important;
+    }
